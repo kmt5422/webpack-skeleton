@@ -1,11 +1,7 @@
-import _ from 'lodash';
+(function(){
+    const div = document.querySelector('.content');
+    const h1 = document.createElement('h1');
 
-function component() {
-    const element = document.createElement('div');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-    return element;
-}
-
-document.body.appendChild(component());
+    h1.textContent = 'Hello World';
+    div.appendChild(h1);
+})();
